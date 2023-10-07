@@ -1,0 +1,286 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/preview16.jpg);
+  background-size: cover;
+}
+
+main {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+main > section {
+  width: 75%;
+  height: 100%;
+  background-color: rgb(74, 74, 74);
+  border-radius: 15px;
+  position: relative;
+}
+main > section > .head {
+  width: 300px;
+  height: 110px;
+  background-color: gray;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main > section > .head::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+}
+main > section > .head > div {
+  width: 150px;
+  height: 120px;
+  background-color: black;
+  border-radius: 30px;
+  position: absolute;
+  left: 25%;
+  bottom: -50px;
+}
+main > section > .head > div > div:nth-of-type(1) {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section > .head > div > div:nth-of-type(1) > a {
+  width: 50%;
+  height: 50%;
+}
+main > section > .head > div > div:nth-of-type(1) > a:nth-of-type(1) > i:hover {
+  color: red;
+}
+main > section > .head > div > div:nth-of-type(1) > a:nth-of-type(2) > i:hover {
+  color: rgb(0, 229, 255);
+}
+main > section > .head > div > div:nth-of-type(1) > a > i {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section > .head > div > div:nth-of-type(2) {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 0 0 30px 30px;
+}
+main > section > .head > div > div:nth-of-type(2) > .up {
+  width: 70%;
+  height: 30px;
+  background-color: black;
+  position: relative;
+  position: absolute;
+  bottom: -30px;
+  left: 15%;
+  border-radius: 5px;
+}
+main > section > .head > div > div:nth-of-type(2) > .up::after {
+  content: "";
+  width: 40px;
+  height: 10px;
+  background-color: rgba(144, 143, 143, 0.646);
+  position: absolute;
+  right: -40px;
+  top: 10px;
+}
+main > section > .head > div > div:nth-of-type(2) > .up::before {
+  content: "";
+  width: 70px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 6px;
+  right: -100px;
+  z-index: 1;
+}
+main > section > .head > div > div:nth-of-type(2) > .down {
+  width: 50%;
+  height: 30px;
+  border-radius: 0 0 50% 50%;
+  background-color: black;
+  position: relative;
+  position: absolute;
+  bottom: -60px;
+  left: 25%;
+  display: flex;
+}
+main > section > .head > div > div:nth-of-type(2) > .down > .one {
+  width: 15px;
+  height: 25px;
+  background-color: black;
+  position: absolute;
+  position: relative;
+  left: 20px;
+  bottom: -10px;
+}
+main > section > .head > div > div:nth-of-type(2) > .down > .one > div {
+  width: 12px;
+  height: 70px;
+  background-color: rgb(42, 25, 25);
+  position: absolute;
+  left: 1px;
+  top: 25px;
+  animation: tow 4s linear infinite;
+}
+main > section > .head > div > div:nth-of-type(2) > .down > .tow {
+  width: 15px;
+  height: 25px;
+  background-color: black;
+  position: relative;
+  position: absolute;
+  left: 42px;
+  bottom: -5px;
+}
+main > section > .head > div > div:nth-of-type(2) > .down > .tow > div {
+  width: 12px;
+  height: 70px;
+  background-color: rgb(42, 25, 25);
+  position: absolute;
+  left: 1px;
+  top: 25px;
+  animation: tow 4s linear infinite;
+}
+main > section > .center {
+  width: 120px;
+  height: 80px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  bottom: 22px;
+  left: 88px;
+  border-radius: 0 0 50% 50%;
+}
+main > section > .center::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: -26px;
+  bottom: 32px;
+  border: 5px solid white;
+}
+main > section > .center > div {
+  width: 15px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.257);
+  position: absolute;
+  bottom: 0;
+  border-radius: 20px;
+}
+main > section > .center > div:nth-of-type(1) {
+  left: 40px;
+  animation: one 6s linear infinite;
+}
+main > section > .center > div:nth-of-type(2) {
+  left: 60px;
+  animation: one 9s linear infinite;
+}
+main > section > .center > div:nth-of-type(3) {
+  left: 80px;
+  animation: one 12s linear infinite;
+}
+main > section > .center > div:nth-of-type(4) {
+  left: 20px;
+  animation: one 15s linear infinite;
+}
+main > section > .buton {
+  width: 110%;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  border-radius: 5px 5px 0 0;
+}
+main > section > .buton::after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 30px;
+  bottom: -5px;
+}
+main > section > .buton::before {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  right: 30px;
+  bottom: -5px;
+}
+
+@keyframes one {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  25% {
+    bottom: 80px;
+    opacity: 0;
+  }
+  30% {
+    bottom: 80px;
+    opacity: 1;
+  }
+  75% {
+    bottom: 103px;
+    opacity: 0.2;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+@keyframes tow {
+  0% {
+    height: 0;
+  }
+  20% {
+    height: 40px;
+  }
+  40% {
+    height: 70px;
+  }
+  41% {
+    height: 70px;
+  }
+  99% {
+    height: 70px;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=syntax8.css.map */
