@@ -1,7 +1,7 @@
 # coffee-machine
 ![screencapture-file-F-parnian-jalase12-syntax8-index-html-2023-10-07-08_32_35](https://github.com/maryamparvaz/coffee-machine/assets/124708513/e4288e7a-675b-4028-baa9-260b2bbebe86)
 
-- [Demo Project](https://maryamparvaz.github.io/3D-room/)
+- [Demo Project](https://maryamparvaz.github.io/coffee-machine/)
 
 - Developed by Maryam Parvaz 🙎
 
